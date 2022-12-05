@@ -1,0 +1,174 @@
+/* ================
+  商品詳細ページ 
+ ================ */
+
+/* 画像選択モジュール */
+.itemImageModule{
+
+}
+.itemImageModule .imageShow{
+  position: relative;
+  margin-bottom: 20px;
+}
+.itemImageModule .imageShow .image{
+  width: 430px;
+  height:344px;
+  overflow: hidden;
+}
+.itemImageModule .imageShow .image img{
+  width: 100%;
+}
+.itemImageModule .imageShow .favorite{
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+}
+.itemImageModule .imageSelect{
+  
+}
+.itemImageModule .imageSelect ul{
+  overflow: hidden;
+}
+.itemImageModule .imageSelect ul li{
+  float: left;
+  width:150px;
+  height:100px;
+  overflow: hidden;
+  margin-right: 20px;
+  border: 1px solid #eee;
+}
+.itemImageModule .imageSelect ul li:hover{
+  border-color: #aaa;
+}
+.itemImageModule .imageSelect ul li:last-child{
+  margin-right: 0px;
+}
+.itemImageModule .imageSelect ul li img{
+  display: block;
+  width:100%;
+}
+
+
+
+/* 商品詳細文 */
+.itemInfoModule .name{
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.itemInfoModule .price{
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.itemInfoModule .price span{
+  font-size: 20px;
+  margin: 0 3px;
+}
+.itemInfoModule .textBlock{  
+  border-top: 1px solid #eee;  
+  border-bottom: 1px solid #eee;  
+}
+
+.itemInfoModule .tabNav{
+  text-align: left;
+}
+.itemInfoModule .tabNav li{
+  display: inline-block;
+  margin-bottom: 6px;
+  
+}
+.itemInfoModule .tabNav li a{
+  color: #555;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+.itemInfoModule .tabNav li a:hover{
+  border-bottom: 2px solid #67b6ce;
+}
+.itemInfoModule .tabNav li.select a{
+  border-bottom: 2px solid #67b6ce;
+  font-weight: bold;
+  cursor: default;
+}
+
+/* タブ */
+.tabContainer .container{
+  display: none;  
+}
+.tabContainer .container.show{
+  display: block;  
+}
+
+
+/* サイズ選択 */ 
+.sizeSelect{
+  margin-top: 40px;
+}
+.sizeSelect ul{
+  overflow: hidden;
+}
+.sizeSelect ul li{
+  float: left;
+  margin-right: 20px;
+}
+.sizeSelect ul li a{
+  display: block;
+  font-size: 12px;
+  padding: 10px 30px;
+  border:2px solid #eee;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+}
+.sizeSelect ul li.select a{
+  border-color: #888;
+}
+
+/* アラートモジュール（サイズがありません） */
+.alert{
+  background: #ffd4d4;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 12px;
+}
+.alert.hidden{
+  display: none;
+}
+
+
+/* 数量選択 */ 
+
+.unitSelect{
+  margin-top: 30px;
+}
+.unitSelect span{
+  margin-right: 10px;
+  font-size: 12px;
+}
+.unitSelect select{
+}
+
+
+
+
+
+/* カートに入れる */ 
+.buttons{
+  margin-top: 30px;
+}
+
+
+/* 注意事項 */
+.noticeModule{
+  margin-top: 30px;
+  border-top: 1px solid #eee;  
+}
+
+
+
+
+
+/* レイアウト調整 */
+.globalFooter{
+  margin-top: 100px;
+}

@@ -1,0 +1,67 @@
+
+
+/* 画像選択モジュール */
+@media (max-width: 480px) {
+  .itemImageModule .imageShow .image{
+    width: 98%;
+    margin: 0 auto;
+    height:auto;
+  }
+  .itemImageModule .imageSelect ul li{
+    float: left;
+    width:30.3%;
+    margin: 0;
+    height:auto;
+    margin: 1.5%;
+    box-sizing: border-box;
+  }
+}
+
+
+
+
+
+
+
+/* 商品詳細文 */
+@media (max-width: 480px) {
+  .itemInfoModule {
+    padding: 10px;
+  }
+  .itemInfoModule .name{
+    margin-bottom: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+/* サイズ選択 */ 
+@media (max-width: 480px) {
+  .sizeSelect{
+    margin-top: 0px;
+  }
+}
+
+
+
+
+
+
+
+
+/* 注意事項 */
+@media (max-width: 480px) {
+  .noticeModule{
+    padding: 10px;
+  }
+}
+
+
+
+
+

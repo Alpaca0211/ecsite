@@ -1,0 +1,126 @@
+
+
+/* 商品モジュール */
+@media (max-width: 480px) {
+  .heading h1{
+    padding: 20px;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    margin-bottom: 0;
+  }
+  .heading h1 span{
+    font-size: 10px;
+    margin-left: 10px;
+  }
+}
+
+
+
+
+
+
+/* 商品テーブルモジュール */
+@media (max-width: 480px) {
+  .cartTableModule table{
+    table-layout: fixed;
+  }
+  .cartTableModule table th{
+    white-space: nowrap;
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+  .cartTableModule table td{
+    padding: 13px 1px;
+  }
+  .cartTableModule table td.image{
+    min-width: 30px;
+    width: 60px;
+  }
+  .cartTableModule table td.name{
+    font-size: 11px;
+    min-width: 40px;
+    padding-left: 5px;
+  }
+  .cartTableModule table tr.error td.name:after{
+    display: block;
+    padding: 0;
+    color:#ff5959;
+    background: none;
+    margin-top: 6px;
+    margin-left: 0;
+    white-space: nowrap;
+  }
+  .cartTableModule table td.price{
+    font-size: 12px;
+  }
+  .form select{
+    padding: 7px 20px 7px 10px;
+  }
+}
+
+
+
+
+
+
+
+
+/* 合計金額モジュール */
+@media (max-width: 480px) {
+  .totalPriceModule{
+    margin-top: 40px;
+  }
+  .totalPriceModule dl{
+    width: auto;
+  }
+  .totalPriceModule dl dt{
+  }
+  .totalPriceModule dl dd{
+    margin-left: 20px;
+  }
+  .totalPriceModule dl dd span{
+    font-size: 27px;
+    font-weight: bold;
+  }
+}
+
+
+
+
+
+
+/* ボタンモジュール */
+@media (max-width: 480px) {
+  .buttonModule .button{
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* レイアウト調整 */
+@media (max-width: 480px) {
+  .globalFooter{
+    margin-top: 20px;
+  }
+}
+
+
+
+
+
+
+
+

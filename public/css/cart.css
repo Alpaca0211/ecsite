@@ -1,0 +1,93 @@
+/* ================
+  カートページ 
+ ================ */
+
+
+/* 商品テーブルモジュール */
+
+.cartTableModule table{
+  width: 100%;
+  border-bottom: 1px solid #e2e2e2;
+}
+.cartTableModule table tr.error td.name:after{
+  display: inline-block;
+  content:"在庫切れ";
+  background: #ff7d7d;
+  color: #fff;
+  font-size: 10px;
+  padding: 5px 10px;
+  margin-left: 13px;
+}
+.cartTableModule table tr.error td{
+  background: #ffd4d4;
+}
+.cartTableModule table th{
+  background: #ccc;
+  text-align: left;
+  padding: 10px 15px;
+  font-size: 12px;
+  border: 1px solid #fff;
+}
+.cartTableModule table td{
+  padding: 20px;
+  vertical-align: middle;
+  border-bottom: 1px dotted #e2e2e2;
+}
+.cartTableModule table td:last-child{
+  border-bottom: none;
+}
+.cartTableModule table td.image{
+  width: 100px;
+}
+.cartTableModule table td.image img{
+  width: 100%;
+  border: 1px solid #e2e2e2;
+}
+.cartTableModule table td.size,
+.cartTableModule table td.unit,
+.cartTableModule table td.action{
+  text-align: center;
+}
+.cartTableModule table td.price{
+  text-align: right;  
+}
+.cartTableModule table td.action{
+  width: 80px;
+}
+
+
+
+/* 合計金額モジュール */
+.totalPriceModule{
+  margin-top: 70px;
+  overflow: hidden;
+}
+.totalPriceModule dl{
+  overflow: hidden;
+  float: right;
+  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 10px;
+  text-align: right;
+}
+.totalPriceModule dl dt{
+  display: inline-block;
+}
+.totalPriceModule dl dd{
+  display: inline-block;
+  margin-left: 150px;
+}
+.totalPriceModule dl dd span{
+  font-size: 27px;
+  margin-right: 7px;
+}
+
+
+
+
+
+
+
+/* レイアウト調整 */
+.globalFooter{
+  margin-top: 100px;
+}

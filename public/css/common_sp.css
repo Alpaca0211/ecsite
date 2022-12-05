@@ -1,0 +1,295 @@
+/*
+  480px以下の画面サイズ用のCSSを以下に記述します。
+  基本的な思想は、PC版のCSSを上書きして修正していきます。
+*/
+
+/*--- サンプル ---*/
+@media (max-width: 480px) {
+   div.sample {height: 200px;}
+}
+/*--- //サンプル ---*/
+
+
+
+
+/*
+
+＜ここから記述開始＞
+
+*/
+
+
+/* ================
+  レイアウト
+ ================ */
+
+@media (max-width: 480px) {
+  .section{
+    width:100%;
+  }
+  .content{
+  padding: 40px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* ================
+  共通ヘッダー 
+ ================ */
+
+/* 通常時 */
+@media (max-width: 480px) {
+  .globalHeader{
+    border-bottom: 2px solid #dbdbdb;
+    padding: 8px 0 8px;
+  }
+  .globalHeader .logo{
+    padding: 0 0 5px 14px;
+  }
+  .globalHeader .logo a{
+    display: block;
+    text-indent: -999em;
+    width:130px;
+    height:26px;
+    background: url('../images/logo_2x.png');
+  }
+  .globalHeader .globalNav{
+    padding-top: 0;
+  }
+  .globalHeader .globalNav ul.sp_menu{
+    display: block;
+    padding-right: 10px;
+    overflow: hidden;
+  }
+  .globalHeader .globalNav ul.sp_menu li{
+    float: left;
+  }
+  .globalHeader .globalNav ul.sp_menu .favorite_icon{
+    padding-right: 10px;
+    padding-top: 4px;
+  }
+  .globalHeader .globalNav ul.sp_menu .favorite_icon a{
+    display: block;
+    width:25px;
+    height:22px;
+    background: url('../images/sp/icon_favorite.png');
+  }
+  .globalHeader .globalNav ul.sp_menu .cart_icon{
+    padding-right: 20px;
+    padding-top: 4px;
+  }
+  .globalHeader .globalNav ul.sp_menu .cart_icon a{
+    position: relative;
+    display: block;
+    width:27px;
+    height:22px;
+    background: url('../images/sp/icon_cart.png');
+  }
+  .globalHeader .globalNav ul.sp_menu .cart_icon a span{
+    position: absolute;
+    right: -11px;
+    bottom: -1px;
+    background: rgba(0,0,0,0.08);
+    color: #8e8e8e;
+    font-size: 10px;
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    line-height: 14px;
+    border-radius: 50px;
+  }
+  .globalHeader .globalNav ul.sp_menu li.cart_icon.select a span{
+    color: #fa4354;
+    background: #ffd7db;
+    animation: bound 0.4s ease-in;
+  }
+
+
+  .globalHeader .globalNav ul.sp_menu .sp_menu_icon{
+    padding-top: 4px;
+  }
+  .globalHeader .globalNav ul.sp_menu .sp_menu_icon a{
+    display: block;
+    width:24px;
+    height:24px;
+    background: url('../images/sp/icon_menu.png');
+  }
+  .globalHeader .globalNav ul.common_menu{
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    background: #FFF;
+    border: 1px solid #e2e2e2;
+    width: 180px;
+    text-align: left;
+  }
+  .globalHeader .globalNav ul.common_menu li{
+    display: block;
+  }
+  .globalHeader .globalNav ul.common_menu li a{
+    display: block;
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+  .globalHeader .globalNav ul.common_menu li.select a,
+  .globalHeader .globalNav ul.common_menu li a:hover{
+    display: block;
+    border-bottom: none;
+    border-left: 2px solid;
+  }
+  .globalHeader .globalNav ul.common_menu li.cart{
+    display: none;
+  }
+}
+
+/* フッター */
+@media (max-width: 480px) {
+  .globalFooter .copyright{
+    font-size: 10px;
+  }
+}
+
+
+
+
+
+/* ================
+  パンくずリスト 
+ ================ */
+@media (max-width: 480px) {
+  .breadCrumb{
+    display: none;
+  }
+}
+
+
+
+
+
+
+/* お気に入りボタン */
+@media (max-width: 480px) {
+  .favorite_btn{
+    padding: 5px;
+    border: 1px solid #e2e2e2;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .favorite_btn.select {
+    border-color: #ff8a95;
+  }
+  .favorite_btn i{
+    font-size: 13px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* テキストの共通装飾 */
+@media (max-width: 480px) {
+  .textBlock {
+    padding: 10px 0;
+  }
+}
+
+
+
+
+
+
+
+
+/* フォームパーツ */
+@media (max-width: 480px) {
+  .form{
+    padding: 10px;
+  }
+  .form select{
+    border: none;
+    background: #e5e5e5;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+  }
+  .form input[type="text"],
+  .form input[type="email"],
+  .form input[type="tel"],
+  .form input[type="password"]{
+    width:100%;
+    box-sizing:border-box;
+  }
+  .form ul{
+    width:100%;
+    padding:0 10px;
+    box-sizing:border-box;
+  }
+}
+
+
+
+
+/* モーダルボックス */
+@media (max-width: 480px) {
+  .modal{
+    left:10px;
+    right: 10px;
+    margin: -100px 0;
+    width:auto;
+  }
+}
+
+/* 商品モジュール */
+@media (max-width: 480px) {
+  .heading h1 span{
+    margin-top: 10px;
+    display: block;
+  }
+}
+
+
+/* ボタン */
+/* ボタン */
+@media (max-width: 480px) {
+  .buttons .button{
+    display: block;
+    width: 100%;
+    padding: 13px 0;
+  }
+  .button.small{
+    font-size: 10px;
+    padding: 2px 4px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

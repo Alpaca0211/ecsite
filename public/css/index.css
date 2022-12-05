@@ -1,0 +1,167 @@
+/* ================
+  トップページ 
+ ================ */
+
+/* メイン画像スライダー */
+/* flex sliderのCSS上書き */
+.flexslider{
+  margin-bottom: 0;
+}
+.flexslider:hover .flex-direction-nav .flex-next{
+  right:0;
+}
+.flexslider:hover .flex-direction-nav .flex-prev{
+  left:0;
+}
+
+.flex-direction-nav a{
+  background: rgba(255,255,255,0.8);
+  width: 14px;
+  height: 18px;
+  padding: 6px;
+  margin-top: -16px;
+}
+.flex-direction-nav a:before{
+  font-size: 12px;
+}
+
+
+/* 商品モジュール */
+.itemModule{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.itemModule.border-top{
+  border-top: 2px solid #e2e2e2;
+}
+.itemModule h1{
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+.itemModule .itemList{
+}
+.itemModule .itemList .item{
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width:268px;
+  margin: 30px;
+}
+.itemModule .itemList .item .image{
+  position: relative;
+  width:100%;
+  margin-bottom: 13px;
+}
+.itemModule .itemList .item .image a{
+  display: block;
+  height: 224px
+}
+
+/* 装飾 */
+.itemModule .itemList .item .image a img {
+  -webkit-transition:0.5s;
+}
+
+/* # # # # # # # # # # # # #
+【JS:04】 サムネイルにhoverすると、ボタンが表示される
+# # # # # # # # # # # # # */
+
+.itemModule .itemList .item .image:hover a img {
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
+.itemModule .itemList .item .image span{
+  /* 透過度 */
+  opacity:0;
+
+  /* 位置 */
+  position: absolute;
+  left:50%;
+  top:50%;
+  margin: -15px 0 0 -55px;
+
+  /* 装飾 */
+  color: #333;
+  background: rgba(255,255,255,0.2);
+  font-size: 12px;
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 3px;
+
+  /* アニメーション */
+  -webkit-transition:0.9s;
+}
+.itemModule .itemList .item .image:hover span{
+  opacity:1;
+}
+
+/* # # # # # # # # # # # # #
+ここまで
+# # # # # # # # # # # # # */
+
+.itemModule .itemList .item .image img{
+  display: block;
+  width:100%
+}
+.itemModule .itemList .item .name{
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+.itemModule .itemList .item .price{
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+.itemModule .itemList .item .favorite{
+  position: absolute;
+  right:12px;
+  top:125px;
+}
+
+
+/* ニュースモジュール */
+/* 形がガラッと違う場合は、PCの方もメディアクエリで囲うと良い */
+
+.newsModule{
+  padding: 20px;
+  background: #cbe6eb;
+}
+
+.newsModule .newsList{
+  overflow: hidden;
+}
+.newsModule .newsList .newsItem{
+  float: left;
+  width:400px;
+  margin: 20px;
+}
+.newsModule .newsList .newsItem.hidden{
+  display: none;
+}
+.newsModule .newsList .newsItem .image{
+  width:100px;
+  height: 70px;
+  overflow: hidden;
+  float: left;
+  margin-right: 20px;  
+}
+.newsModule .newsList .newsItem .image img{
+  display: block;
+  width:100%;
+  margin-right: 20px;  
+}
+.newsModule .newsList .newsItem .title{
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.newsModule .newsList .newsItem .text{
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+
+
+

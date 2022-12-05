@@ -1,0 +1,79 @@
+
+
+/* メイン画像スライダー */
+/* flex sliderのCSS上書き */
+@media (max-width: 480px) {
+  .flexslider{
+    border:none;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* 商品モジュール */
+@media (max-width: 480px) {
+  .itemModule h1{
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .itemModule .itemList .item{
+    width:49%;
+    margin: 0;
+    padding:10px;
+    box-sizing: border-box;
+  }
+  .itemModule .itemList .item .image a{
+    height: auto;
+  }
+  .itemModule .itemList .item .favorite{
+    bottom: 65px;
+    top: auto;
+  }
+
+}
+
+
+
+
+
+
+
+
+/* ニュースモジュール */
+@media (max-width: 480px) {
+  .newsModule{
+    padding: 10px;
+  }
+  .newsModule h1{
+    padding: 10px 10px 0px 10px;
+  }
+  .newsModule .newsList .newsItem{
+    width:50%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  .newsModule .newsList .newsItem .image{
+    width:100%;
+    height:inherit;
+    margin-bottom: 10px;
+  }
+  .newsModule .newsList .newsItem .title{
+    font-size: 11px;
+  }
+  .newsModule .newsList .newsItem .text{
+    font-size: 11px;
+  }
+}
+
+
+
+
